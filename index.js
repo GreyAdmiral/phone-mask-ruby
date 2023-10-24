@@ -1,6 +1,6 @@
 // @ts-check
-module.exports = function phoneMaskBYRU(sel) {
-	document.addEventListener("DOMContentLoaded", function() {
+module.exports = function (sel) {
+	document.addEventListener("DOMContentLoaded", function () {
 		const selector = sel || "input[data-phone-input]",
 			phoneInputs = document.querySelectorAll(selector);
 		phoneInputs.forEach((it) => {
