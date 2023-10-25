@@ -1,11 +1,13 @@
 // @ts-check
+const options = require("./phonemasks.json");
 module.exports = function (sel) {
 	document.addEventListener("DOMContentLoaded", function () {
 		const selector = sel || "input[data-phone-input]",
 			phoneInputs = document.querySelectorAll(selector);
+		options["handleEvent"] = onPhoneInput;
 		phoneInputs.forEach((it) => {
 			it.addEventListener("keydown", onPhoneKeyDown);
-			it.addEventListener("input", onPhoneInput);
+			it.addEventListener("input", options);
 			it.addEventListener("paste", onPhonePaste);
 		});
 	});
@@ -44,42 +46,32 @@ function onPhoneInput(e) {
 	if (~["7", "8", "9"].indexOf(inputNumbersValue[0])) {
 		if (inputNumbersValue[0] == "9") inputNumbersValue = "7" + inputNumbersValue;
 		const firstSymbols = inputNumbersValue[0] == "8" ? "8" : "+7";
-		formattedInputValue = input.value = firstSymbols;
-		if (inputNumbersValue.length > 1) {
-			formattedInputValue += " (" + inputNumbersValue.substring(1, 4);
-		}
-		if (inputNumbersValue.length > 4) {
-			formattedInputValue += ") " + inputNumbersValue.substring(4, 7);
-		}
-		if (inputNumbersValue.length > 7) {
-			formattedInputValue += "-" + inputNumbersValue.substring(7, 9);
-		}
-		if (inputNumbersValue.length > 9) {
-			formattedInputValue += "-" + inputNumbersValue.substring(9, 11);
-		}
+		renderMask(firstSymbols, this.ru);
 	} else if (inputNumbersValue.startsWith("375")) {
 		const firstSymbols = "+375";
-		formattedInputValue = input.value = firstSymbols;
-		if (inputNumbersValue.length > 3) {
-			formattedInputValue += " (" + inputNumbersValue.substring(3, 5);
-		}
-		if (inputNumbersValue.length > 5) {
-			formattedInputValue += ") " + inputNumbersValue.substring(5, 8);
-		}
-		if (inputNumbersValue.length > 8) {
-			formattedInputValue += "-" + inputNumbersValue.substring(8, 10);
-		}
-		if (inputNumbersValue.length > 10) {
-			formattedInputValue += "-" + inputNumbersValue.substring(10, 12);
-		}
+		renderMask(firstSymbols, this.by);
 	} else {
 		if (inputNumbersValue) {
 			formattedInputValue = "+" + inputNumbersValue.substring(0, 16);
 		}
 	}
 	input.value = formattedInputValue;
+	function renderMask(firstSymbols, opt) {
+		formattedInputValue = input.value = firstSymbols;
+		if (inputNumbersValue.length > +opt.fb.from) {
+			formattedInputValue += " (" + inputNumbersValue.substring(+opt.fb.from, +opt.fb.to);
+		}
+		if (inputNumbersValue.length > +opt.sb.from) {
+			formattedInputValue += ") " + inputNumbersValue.substring(+opt.sb.from, +opt.sb.to);
+		}
+		if (inputNumbersValue.length > +opt.fn.from) {
+			formattedInputValue += "-" + inputNumbersValue.substring(+opt.fn.from, +opt.fn.to);
+		}
+		if (inputNumbersValue.length > +opt.sn.from) {
+			formattedInputValue += "-" + inputNumbersValue.substring(+opt.sn.from, +opt.sn.to);
+		}
+	}
 }
-
 function onPhoneKeyDown(e) {
 	const inputValue = e.target.value.replace(/\D/g, "");
 	if (e.keyCode == 8 && inputValue.length == 1) {
