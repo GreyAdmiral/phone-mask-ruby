@@ -1,6 +1,6 @@
 # phone-mask-ruby
 
-> The plugin activates the mask when entering phone numbers. Belarusian and Russian numbers are supported, the rest are introduced without a mask.
+> The plugin activates the mask when entering phone numbers. Belarusian, Russian and Ukrainian numbers are supported, the rest are introduced without a mask.
 
 ## Install
 
