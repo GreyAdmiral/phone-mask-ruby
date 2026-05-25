@@ -4,19 +4,36 @@
 
 ## Install
 
+#### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.0/dist/phone-mask-native.min.js"></script>
+```
+
+or
+
+```html
+<script src="https://unpkg.com/phone-mask-ruby@2.1.0/dist/phone-mask-native.min.js"></script>
+```
+
+#### Import
+
+Run the command in the console
+
 ```shell
 npm i phone-mask-ruby
 ```
 
-## Import
+Perform the import
 
 ```javascript
-const phoneMaskRUBY = require("phone-mask-ruby");
+const phoneMaskRUBY = require('phone-mask-ruby');
 ```
+
 or
 
 ```javascript
-import phoneMaskRUBY from 'phone-mask-ruby'
+import phoneMaskRUBY from 'phone-mask-ruby';
 ```
 
 ## Option (selector)
@@ -28,16 +45,42 @@ The selector of the input fields of telephone numbers (you can also use the text
 
 ## Usage
 
-```javascript
-const phoneMaskRUBY = require("phone-mask-ruby");
+#### CDN
 
-phoneMaskRUBY("your-selector");
+```html
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.0/dist/phone-mask-native.min.js"></script>
+
+...
+
+<script>
+   phoneMaskRUBY();
+</script>
+```
+
+or
+
+```html
+<script src="https://unpkg.com/phone-mask-ruby@2.1.0/dist/phone-mask-native.min.js"></script>
+
+...
+
+<script>
+   phoneMaskRUBY('your-selector');
+</script>
+```
+
+#### Import
+
+```javascript
+const phoneMaskRUBY = require('phone-mask-ruby');
+
+phoneMaskRUBY('your-selector');
 ```
 
 or
 
 ```javascript
-const phoneMaskRUBY = require("phone-mask-ruby");
+const phoneMaskRUBY = require('phone-mask-ruby');
 
 phoneMaskRUBY();
 ```

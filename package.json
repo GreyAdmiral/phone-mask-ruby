@@ -1,18 +1,29 @@
 {
-	"name": "phone-mask-ruby",
-	"description": "The plugin activates the mask when entering phone numbers. Belarusian and Russian numbers are supported, the rest are introduced without a mask.",
-	"version": "2.0.2",
-	"homepage": "https://github.com/GreyAdmiral",
-	"repository": "git://github.com/GreyAdmiral/phone-mask-ruby.git",
-	"author": "Binarion (https://greyadmiral.github.io/)",
-	"main": "./index.js",
-	"keywords": [
-		"plugin",
-		"form",
-		"input",
-		"phone mask",
-		"phone number",
-		"phone-mask-ruby"
-	],
-	"license": "MIT"
+   "name": "phone-mask-ruby",
+   "description": "The plugin activates the mask when entering phone numbers. Belarusian and Russian numbers are supported, the rest are introduced without a mask.",
+   "version": "2.1.0",
+   "homepage": "https://github.com/GreyAdmiral",
+   "repository": "git://github.com/GreyAdmiral/phone-mask-ruby.git",
+   "author": "Binarion (https://greyadmiral.github.io/)",
+   "main": "dist/index.js",
+   "keywords": [
+      "plugin",
+      "form",
+      "input",
+      "phone mask",
+      "phone number",
+      "phone-mask-ruby"
+   ],
+   "license": "MIT",
+   "scripts": {
+      "build": "rollup -c"
+   },
+   "devDependencies": {
+      "@babel/preset-env": "^7.29.5",
+      "@rollup/plugin-babel": "^7.0.0",
+      "@rollup/plugin-commonjs": "^29.0.2",
+      "@rollup/plugin-json": "^6.1.0",
+      "@rollup/plugin-terser": "^1.0.0",
+      "rollup": "^4.60.4"
+   }
 }
