@@ -8,7 +8,7 @@ export default [
       input: 'src/main.js',
       output: [
          {
-            file: 'dist/phone-mask-native.js',
+            file: 'dist/phone-mask-ruby.js',
             format: 'es',
          },
          {
@@ -22,7 +22,7 @@ export default [
       input: 'src/main.js',
       output: [
          {
-            file: 'dist/phone-mask-native.min.js',
+            file: 'dist/phone-mask-ruby.min.js',
             format: 'iife',
             name: 'phoneMaskRUBY',
          },
