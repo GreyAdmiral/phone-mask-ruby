@@ -7,13 +7,13 @@
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.2/dist/phone-mask-ruby.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.3/dist/phone-mask-ruby.min.js"></script>
 ```
 
 or
 
 ```html
-<script src="https://unpkg.com/phone-mask-ruby@2.1.2/dist/phone-mask-ruby.min.js"></script>
+<script src="https://unpkg.com/phone-mask-ruby@2.1.3/dist/phone-mask-ruby.min.js"></script>
 ```
 
 #### Import
@@ -48,7 +48,7 @@ The selector of the input fields of telephone numbers (you can also use the text
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.2/dist/phone-mask-ruby.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.3/dist/phone-mask-ruby.min.js"></script>
 
 ...
 
@@ -60,7 +60,7 @@ The selector of the input fields of telephone numbers (you can also use the text
 or
 
 ```html
-<script src="https://unpkg.com/phone-mask-ruby@2.1.2/dist/phone-mask-ruby.min.js"></script>
+<script src="https://unpkg.com/phone-mask-ruby@2.1.3/dist/phone-mask-ruby.min.js"></script>
 
 ...
 
