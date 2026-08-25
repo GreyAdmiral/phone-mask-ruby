@@ -1,6 +1,6 @@
 # phone-mask-ruby
 
-> <span style="color: #8B0000; font-style: italic;">The project is closed and will no longer be supported. If you like this mask implementation, use the <a style="font-weight: bold;">phone-mask-native</a> package.</span>
+> <span style="color: #8B0000; font-style: italic;">The project is closed and will no longer be supported. If you like this mask implementation, use the <a href="https://www.npmjs.com/package/phone-mask-native" style="font-weight: bold;">phone-mask-native</a> package.</span>
 > The plugin activates the mask when entering phone numbers. Belarusian, Russian and Ukrainian numbers are supported, the rest are introduced without a mask.
 
 ## Install
@@ -8,13 +8,13 @@
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.4/dist/phone-mask-ruby.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.5/dist/phone-mask-ruby.min.js"></script>
 ```
 
 or
 
 ```html
-<script src="https://unpkg.com/phone-mask-ruby@2.1.4/dist/phone-mask-ruby.min.js"></script>
+<script src="https://unpkg.com/phone-mask-ruby@2.1.5/dist/phone-mask-ruby.min.js"></script>
 ```
 
 #### Import
@@ -49,7 +49,7 @@ The selector of the input fields of telephone numbers (you can also use the text
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.4/dist/phone-mask-ruby.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.5/dist/phone-mask-ruby.min.js"></script>
 
 ...
 
@@ -61,7 +61,7 @@ The selector of the input fields of telephone numbers (you can also use the text
 or
 
 ```html
-<script src="https://unpkg.com/phone-mask-ruby@2.1.4/dist/phone-mask-ruby.min.js"></script>
+<script src="https://unpkg.com/phone-mask-ruby@2.1.5/dist/phone-mask-ruby.min.js"></script>
 
 ...
 
