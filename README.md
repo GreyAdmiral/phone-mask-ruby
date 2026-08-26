@@ -1,6 +1,6 @@
 # phone-mask-ruby
 
-> ___The project is closed and will no longer be supported. If you like this mask implementation, use the <a href="https://www.npmjs.com/package/phone-mask-native">phone-mask-native</a> package.___
+> ___The project is closed and will no longer be supported. If you like this mask implementation, use the [phone-mask-native](https://www.npmjs.com/package/phone-mask-native) package.___
 >
 > The plugin activates the mask when entering phone numbers. Belarusian, Russian and Ukrainian numbers are supported, the rest are introduced without a mask.
 
@@ -9,13 +9,13 @@
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.7/dist/phone-mask-ruby.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.8/dist/phone-mask-ruby.min.js"></script>
 ```
 
 or
 
 ```html
-<script src="https://unpkg.com/phone-mask-ruby@2.1.7/dist/phone-mask-ruby.min.js"></script>
+<script src="https://unpkg.com/phone-mask-ruby@2.1.8/dist/phone-mask-ruby.min.js"></script>
 ```
 
 #### Import
@@ -50,7 +50,7 @@ The selector of the input fields of telephone numbers (you can also use the text
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.7/dist/phone-mask-ruby.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-mask-ruby@2.1.8/dist/phone-mask-ruby.min.js"></script>
 
 ...
 
@@ -62,7 +62,7 @@ The selector of the input fields of telephone numbers (you can also use the text
 or
 
 ```html
-<script src="https://unpkg.com/phone-mask-ruby@2.1.7/dist/phone-mask-ruby.min.js"></script>
+<script src="https://unpkg.com/phone-mask-ruby@2.1.8/dist/phone-mask-ruby.min.js"></script>
 
 ...
 
